@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: black;
+  background-size: cover;
+  /*filter: brightness(0.05) invert(1);*/
+  /*backdrop-filter: blur(5px);*/
+}
+
+.time_container {
+  backdrop-filter: blur(5px);
+  width: 700px;
+}
+
+.time_item {
+  width: 100%;
+}
+
+#time {
+  padding: 10px;
+  font-size: 8rem;
+  font-stretch: normal
+}
+
+.hour, .min, .sec {
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+
+.ampm {
+  display: inline-block;
+  width: 190px;
+  text-align: right;
+}
+
+h1 {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  opacity: 0.6;
+}
+
+@media (max-width: 700px) {
+  #time {
+    font-size: 6rem;
+  }
+  .time_container {
+    backdrop-filter: blur(5px);
+    width: 550px;
+  }
+  .hour, .min, .sec {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+  .ampm {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+  }
+}
